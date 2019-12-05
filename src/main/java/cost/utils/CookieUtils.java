@@ -68,7 +68,7 @@ public class CookieUtils {
             String userIdString = getCookie(request, Constant.USER_ID);
             //logger.info("cookie中的userIdString：{}", userIdString);
             if(StringUtils.isEmpty(userIdString)){
-                response.sendRedirect(Constant.LOGIN_URL_BY);
+                response.sendRedirect(Constant.INDEX_URL_WEB);
                 return null;
             }
             return RSAUtils.decrypt(userIdString, DESCoder.privateKey);
