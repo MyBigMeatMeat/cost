@@ -54,7 +54,7 @@ public class PersonController {
     }
 
     /**
-     * 添加人物信息 
+     * 添加人物信息
      * @return
      */
     @RequestMapping("addPerson")
@@ -105,9 +105,14 @@ public class PersonController {
         return result.toString();
     }
 
+    /**
+     * 删除人物
+     * @param id
+     * @return
+     */
     @RequestMapping("deletePerson")
     @ResponseBody
-    public String deletePerson(@RequestParam(value = "name", required = false) Integer id){
+    public String deletePerson(@RequestParam(value = "id", required = false) Integer id){
         logger.info(" request person/deletePerson  param:    id:{} ", id);
         JSONObject result = new JSONObject();
 
