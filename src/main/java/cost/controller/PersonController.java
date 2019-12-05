@@ -54,7 +54,7 @@ public class PersonController {
     }
 
     /**
-     * 添加人物信息
+     * 添加人物信息 
      * @return
      */
     @RequestMapping("addPerson")
