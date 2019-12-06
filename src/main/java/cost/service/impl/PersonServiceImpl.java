@@ -26,7 +26,7 @@ public class PersonServiceImpl implements PersonService {
     public List<CostPerson> getAllList() {
         CostPersonExample costPersonExample = new CostPersonExample();
         costPersonExample.createCriteria().andStatusEqualTo(1);
-        costPersonExample.setOrderByClause("capital");
+        costPersonExample.setOrderByClause("capital desc ");
         return costPersonMapper.selectByExample(costPersonExample);
     }
 

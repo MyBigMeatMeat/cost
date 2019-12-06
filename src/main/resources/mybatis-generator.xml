@@ -71,5 +71,13 @@
             <property name="runtimeTableName" value="cost_person"/>
         </table>
 
+        <!--商品表-->
+        <table tableName="cost_product" domainObjectName="CostProduct" >
+            <!--驼峰命名-->
+            <property name="useActualColumnNames" value="false"/>
+            <!--如果设置了runtimeTableName，那么在生成的SQL中，使用该指定的tablename，而不是table元素上的tablename-->
+            <property name="runtimeTableName" value="cost_product"/>
+        </table>
+
     </context>
 </generatorConfiguration>
